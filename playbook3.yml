@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name: Update all packages
+    apt:
+      upgrade: dist
+    become: yes

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Add user
+    user:
+      name: username
+      password: password
+      state: present
+    become: yes

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+  - name: Install packages
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - nginx
+      - php
+      - mysql-server
+    become: yes
